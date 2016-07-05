@@ -1,0 +1,330 @@
+@import 'wp-theme.css';
+
+body {
+background-color: transparent;
+}
+
+#upperwrap, #headerwrap {
+background-image: none;
+background-color: #ffffff;
+}
+
+#footerwrap {
+background-image: none;
+background-color: #ffffff;
+}
+
+body {
+font-family: "Source Sans Pro";
+color: #000000;
+font-size: 13.6px;
+}
+
+a {
+color: #bf1c1c;
+text-decoration: none;
+}
+
+a:hover {
+color: #ed5f5f;
+text-decoration: none;
+}
+
+h1 {
+font-family: "Source Sans Pro";
+}
+
+h2 {
+font-family: "Source Sans Pro";
+}
+
+h3 {
+font-family: "Source Sans Pro";
+}
+
+h4 {
+font-family: "Source Sans Pro";
+}
+
+h5 {
+font-family: "Source Sans Pro";
+color: #000000;
+font-size: 1.4em;
+font-weight: normal;
+font-style: normal;
+font-variant: normal;
+text-transform: uppercase;
+text-decoration: none;
+}
+
+h6 {
+font-family: "Source Sans Pro";
+}
+
+#header {
+background-image: none;
+background-color: #ffffff;
+}
+
+#site-logo a {
+font-family: "Source Sans Pro";
+color: #000000;
+font-size: 100%;
+font-weight: normal;
+font-style: normal;
+font-variant: normal;
+text-transform: capitalize;
+text-decoration: none;
+}
+
+#site-logo a:hover {
+color: #c44e4e;
+text-decoration: none;
+}
+
+#site-description {
+color: #000000;
+font-style: normal;
+}
+
+#main-nav li a {
+font-family: Georgia, "Times New Roman", Times, serif;
+font-size: 70%;
+color: #000000;
+text-decoration: none;
+padding-top: 0px;
+padding-right: 10px;
+padding-bottom: 0px;
+padding-left: 10px;
+background-color: #ffffff;
+}
+
+#main-nav li a:hover {
+color: #bf1c1c;
+text-decoration: none;
+}
+#main-nav li a.active {
+color: #bf1c1c;
+text-decoration: none;
+}
+
+#main-nav .current_page_item a, #main-nav .current-menu-item a {
+color: #bf1c1c;
+}
+
+#main-nav .current_page_item a:hover, #main-nav .current-menu-item a:hover {
+color: #e85858;
+}
+
+#main-nav ul {
+background-color: #ffffff;
+border: 0px   #ffffff;
+}
+
+#main-nav ul a, #main-nav .current_page_item ul a, #main-nav ul .current_page_item a, #main-nav .current-menu-item ul a, #main-nav ul .current-menu-item a {
+font-size: 90%;
+padding-top: 0px;
+padding-right: 10px;
+padding-bottom: 0px;
+padding-left: 0px;
+border: 0px   #000000;
+}
+
+#main-nav ul a:hover, #main-nav .current_page_item ul a:hover, #main-nav ul .current_page_item a:hover, #main-nav .current-menu-item ul a:hover, #main-nav ul .current-menu-item a:hover {
+background-color: transparent;
+}
+
+.welcome-message {
+font-family: "Source Sans Pro";
+font-size: 100%;
+}
+
+.welcome-message h1 {
+font-family: "Source Sans Pro";
+}
+
+.welcome-message a {
+color: #ff0000;
+text-decoration: none;
+}
+
+.welcome-message a:hover {
+color: #ff0000;
+text-decoration: underline;
+}
+
+.post-title {
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 130%;
+font-variant: normal;
+text-decoration: none;
+}
+
+.page-title {
+font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+font-size: 170%;
+}
+
+.post-nav a {
+font-family: "Times New Roman", Times, serif;
+}
+
+#sidebar {
+font-family: "Source Sans Pro";
+font-size: 11px;
+}
+
+#sidebar .widgettitle {
+font-family: "Source Sans Pro";
+}
+
+#footerwrap {
+background-image: none;
+background-color: #ffffff;
+background-repeat: no-repeat;
+}
+
+#footer-logo {
+display: none;
+}
+
+#footer-logo-wrap {
+display: none;
+}
+
+.post-author {
+display: none
+}
+
+.post-image img {
+border-width: 0px;
+}
+
+.welcome-message {
+    background: none;
+    box-shadow: none;
+    text-align: left;
+}
+
+.welcome-message-inner {
+    border: none;
+}
+
+.flex-control-nav a {
+    background: none repeat scroll 0 0 rgba(204, 204, 204, 1);
+    border: 2px solid #CCCCCC;
+}
+.flex-control-nav a.active {
+    border-color: #CCCCCC;
+}
+
+#header {
+    color: #BCC3C9;
+    height: 90px;
+    position: relative;
+    z-index: 100;
+}
+
+#main-nav {
+    left: 0px;
+    position: absolute;
+    top: 90px;
+}
+
+.grid4 .post-content {
+font-size: 11px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-shadow: none;
+}
+
+#main-nav a {
+    text-shadow: none;
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Source Sans Pro Light"), local("SourceSansPro-Light"), url("http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/toadOcfmlt9b38dHJxOBGMVNtom4QlEDNJaqqqzqdSs.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Source Sans Pro";
+    font-style: normal;
+    font-weight: 400;
+    src: local("Source Sans Pro"), local("SourceSansPro-Regular"), url("http://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/ODelI1aHBYDBqgeIAH2zlNHq-FFgoDNV3GTKpHwuvtI.woff") format("woff");
+}
+
+body {
+    background: none repeat scroll 0 0 #FFFFFF;
+    color: #666666;
+    font-family: "Source Sans Pro";
+    font-weight: 300;
+    letter-spacing: 0.07em;
+}
+
+
+#main-nav a {
+    display: inline;
+    font: 72%/60% sans-serif !important;
+}
+
+.post-image:hover {
+opacity:0.5!important;
+}
+
+
+/* SLIDESHOW___________________________________________________*/
+#slideshow-wrapper0{
+width:100%;
+height:400px;
+max-height:450px;
+}
+
+.psp-active{
+float:center!important;
+}
+
+#portfolio-slideshow0{
+width:100%!important;
+}
+
+.portfolio-slideshow{
+width:100%!important;
+}
+
+.slideshow-description{
+float:left!important;
+}
+
+div.slideshow-meta{
+    text-align:center!important;
+    line-height:1rem!important; 
+    font-size:11.5px!important;
+    float:right!important;
+    position:relative;
+    width:98%!important;
+    text-justify:inter-word;
+}
+
+.post-meta .post-category {
+    background: none; 
+    padding-left: 10px;
+}
+
+.loader{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url(../images/loader.gif) no-repeat center center, #fff;
+    background-size: 50px;
+    z-index: 99999;
+}
+.loader.active{
+    display: block;
+}
+
