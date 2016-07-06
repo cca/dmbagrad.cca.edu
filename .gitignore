@@ -1,2 +1,4 @@
-#composer vendor folder
+# composer vendor folder
 /vendor
+# environmental variables
+.env
