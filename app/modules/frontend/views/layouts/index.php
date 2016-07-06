@@ -13,8 +13,8 @@
 		<header id="header" style='height: 50px;' class="pagewidth">
 		    <hgroup>
 		        <div id="site-logo" style='width: 100%;'>
-		            <a href="http://www.cca.edu" title="Graduate Thesis Work 2014" style='background: url(/assets/images/img.jpg) no-repeat left center; background-size: 100%; height: 40px;display: block;float: right;width: 324px;'></a>
-		            <h1 style='font-size: 30px;margin-top: -13px;font-weight: bold; text-transform: none; float: left;'><a href="/" style='font-family: inherit; font-weight: inherit;' class='ght'>DMBA Graduate Thesis Work <?php if(Sili::$app->request->get('filter')['year']) {echo Sili::$app->request->get('filter')['year'];}else{echo '2016';}; ?></a></h1>
+		            <a href="http://www.cca.edu" title="California College of the Arts" style='background: url(/assets/images/img.jpg) no-repeat left center; background-size: 100%; height: 40px; display: block; float: right; width: 324px;'></a>
+		            <h1 style='font-size: 30px;margin-top: -13px; font-weight: bold; text-transform: none; float: left;'><a href="/" style='font-family: inherit; font-weight: inherit;' class='ght'>DMBA Graduate Thesis Work <?php if(Sili::$app->request->get('filter')['year']) {echo Sili::$app->request->get('filter')['year'];}else{echo '2016';}; ?></a></h1>
 		        </div>
 		    </hgroup>
 		    <div id="main-nav-wrap">
@@ -25,6 +25,8 @@
 		                <li class="menu-item menu-item-type-post_type menu-item-object-page filter" data-attr='category' data-value='1'><a class='menu-item-a sf <?= Sili::$app->request->get('filter')['category'] == '1' ? 'active' : '' ?>' >STRATEGIC FORESIGHT</a></li>
 		                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children"><a>Archives</a>
 		                    <ul class="filter-by-year sub-menu">
+								<!-- @TODO this should print current year back to 2010
+							 	instead of hard-coded dates like this... -->
 			                    <li class="menu-item menu-item-type-custom menu-item-object-custom filter" data-attr='year' data-value='2016'><a href="">2016</a></li>
 			                    <li class="menu-item menu-item-type-custom menu-item-object-custom filter" data-attr='year' data-value='2015'><a href="">2015</a></li>
 		                        <li class="menu-item menu-item-type-custom menu-item-object-custom filter" data-attr='year' data-value='2014'><a href="">2014</a></li>
@@ -53,7 +55,7 @@
 		});
 		$('#search_inp').keypress(function(event) {
 			event.keyCode == 13 ? $('#text_inp').val($(this).val()).parent('form').submit() : $('#text_inp').val($(this).val());
-		});	
+		});
 	</script>
 	<form style='display: none;' id='filterForm' action="/">
 		<input type="text" name='filter[year]' id='year' value='<?= isset(Sili::$app->request->get('filter')['year']) ? Sili::$app->request->get('filter')['year'] : '' ?>'>
@@ -63,7 +65,7 @@
 
 
 	<div id="body" class="clearfix">
-		<?= $content ?>		
+		<?= $content ?>
 	</div>
 
 	<input type='hidden' name='query_inp'>
