@@ -22,7 +22,7 @@ mysql> UPDATE users SET password = MD5('newpassword') WHERE username = 'admin';
 
 ## Development History & Details
 
-The DMBA program worked with an IT outsourcing firm, [Onix Systems](https://onix-systems.com/), who contracted with a developer in the Ukraine to create this app. Thus the Cyrillic code comments.
+The DMBA program worked with an IT outsourcing firm, [Onix Systems](https://onix-systems.com/), who contracted with a developer in the Ukraine to create this app. Thus the Cyrillic code comments. See also: [the developer's original repo](https://bitbucket.org/onix-systems/art-college/src).
 
 The app uses "Simplelight — a fast, small (1.3 mb), powerful framework for developing any web application" as a PHP framework. I haven't found any documentation for this framework. [Here's the git repo](https://github.com/canabina/SimplelightCore) with its uninformative, single-sentence readme.
 
