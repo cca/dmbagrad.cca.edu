@@ -19,3 +19,11 @@ mysql> UPDATE users SET password = MD5('newpassword') WHERE username = 'admin';
 - the "www" folder needs to be the document root
     + e.g. if you're running this locally, `cd` into "www" & run `php -S localhost:8000`
 - in your web browser, sign in as the admin user at {{domain}}/admin & use the "Update Data" button to pull a fresh set of data from VAULT
+
+## Development History & Details
+
+The DMBA program worked with an IT outsourcing firm, [Onix Systems](https://onix-systems.com/), who contracted with a developer in the Ukraine to create this app. Thus the Cyrillic code comments.
+
+The app uses "Simplelight — a fast, small (1.3 mb), powerful framework for developing any web application" as a PHP framework. I haven't found any documentation for this framework. [Here's the git repo](https://github.com/canabina/SimplelightCore) with its uninformative, single-sentence readme.
+
+The app pulls data from public VAULT APIs located at http://libraries.cca.edu/dmba/ (for Design Strategy MBA) and http://libraries.cca.edu/strategic-foresight/ (for Strategic Foresight MBA). The wrapper around EQUELLA's (the backend software powering VAULT) APIs is [another CCA git repo](https://github.com/cca/dmba_vault_api).
