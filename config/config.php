@@ -3,17 +3,15 @@
 return [
 
 		'db' => [
-
 			'server' => 'localhost',
-			'username' => 'root',
-			'password' => '123456',
-			'database_name' => 'ccaprod',
+			'username' => getenv('DB_USER'),
+			'password' => getenv('DB_PW'),
+			'database_name' => getenv('DB_NAME'),
 			'database_type' => 'mysql',
 			'charset' => 'utf8'
-
 		],
 
-		'root_domain' => 'http://clients.onix-systems.com/cca',
+		'root_domain' => 'http://localhost',
 
 		'components' => [
 
