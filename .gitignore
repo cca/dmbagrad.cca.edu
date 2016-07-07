@@ -2,3 +2,4 @@
 /vendor
 # environmental variables
 .env
+config/config.php
