@@ -38,7 +38,9 @@ class SetdataController extends IndexController
 					}
 						
 				}elseif(!$projectTemp){
-					$updateResults[] = $value;
+					if (trim($value->course) == 'Venture Studio' || trim($value->course) == 'Foresight Venture Studio') {
+						$updateResults[] = $value;
+					}
 				}
 			}
 
