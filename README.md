@@ -26,7 +26,7 @@ The DMBA program worked with an IT outsourcing firm, [Onix Systems](https://onix
 
 The app uses "Simplelight — a fast, small (1.3 mb), powerful framework for developing any web application" as a PHP framework. I haven't found any documentation for this framework. [Here's the git repo](https://github.com/canabina/SimplelightCore) with its uninformative, single-sentence readme.
 
-The app pulls data from public VAULT APIs located at http://libraries.cca.edu/dmba/ (for Design Strategy MBA) and http://libraries.cca.edu/strategic-foresight/ (for Strategic Foresight MBA). The wrapper around EQUELLA's (the backend software powering VAULT) APIs is [another CCA git repo](https://github.com/cca/dmba_vault_api).
+The app pulls data from public VAULT APIs located at http://libraries-archive.cca.edu/dmba/ (for Design Strategy MBA) and http://libraries-archive.cca.edu/strategic-foresight/ (for Strategic Foresight MBA). The wrapper around EQUELLA's (the backend software powering VAULT) APIs is [another CCA git repo](https://github.com/cca/dmba_vault_api). Note that the libraries-archive subdomain will be retired sometime in the coming year and a replacement API endpoint will need to be made.
 
 # LICENSE
 

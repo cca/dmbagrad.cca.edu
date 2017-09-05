@@ -7,18 +7,18 @@ class SetdataController extends IndexController
 	{
 		$start = 0;
 		$results = [];
-		while ($data = json_decode(file_get_contents('http://libraries.cca.edu/dmba/?length=50&start='.$start))->results ) {
+		while ($data = json_decode(file_get_contents('http://libraries-archive.cca.edu/dmba/?length=50&start='.$start))->results ) {
 			$results = array_merge($results, $data);
 			$start = $start + 50;
 		}
 
-		$strategicForesight = json_decode(file_get_contents('http://libraries.cca.edu/strategic-foresight'))->results;
+		$strategicForesight = json_decode(file_get_contents('http://libraries-archive.cca.edu/strategic-foresight'))->results;
 
 		$datas = [
 			'strategicForesight' => $strategicForesight,
 			'designStartegy' => $results
 		];
-		
+
 		foreach ($datas as $type => $dataValues) {
 
 
@@ -36,7 +36,7 @@ class SetdataController extends IndexController
 							Sili::$db->delete('links', ['attach_id' => $at['id']]);
 						}
 					}
-						
+
 				}elseif(!$projectTemp){
 					if (trim($value->course) == 'Venture Studio' || trim($value->course) == 'Foresight Venture Studio') {
 						$updateResults[] = $value;
@@ -61,7 +61,7 @@ class SetdataController extends IndexController
 						'faculty' => $project->faculty,
 						'section' => $project->section,
 						'dataType' => $type
-					]);	
+					]);
 					if ($project->attachments) {
 						foreach ($project->attachments as $attach) {
 							$attachId = Sili::$db->insert('attachments', [
@@ -92,15 +92,9 @@ class SetdataController extends IndexController
 		}
 
 		echo "Data updated. <a href='/admin'>Go back</a>";
-		
+
 		// print_r($results);
 
 	}
 
 }
-
-
-
-
-
-

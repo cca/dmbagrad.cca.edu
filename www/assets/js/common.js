@@ -44,9 +44,9 @@ $('#body').fa({
 						$('.loops-wrapper').html("");
 						var year = $(this).attr('href');
 						var semester = ['Spring', 'Fall', 'Summer'];
-						for (var i = 0; i < semester.length; i++) 
+						for (var i = 0; i < semester.length; i++)
 							responce('semester='+semester[i]+'%20'+year);
-						
+
 					});
 
 
@@ -65,12 +65,12 @@ $('#body').fa({
 
 
 					function responce(filter, cleared){
-						
+
 						$.ajax({
-							url: 'http://libraries.cca.edu/dmba/',
+							url: 'http://libraries-archive.cca.edu/dmba/',
 							type: 'GET',
 							dataType: 'JSON',
-							data: filter, 
+							data: filter,
 							async: false,
 							success: res => {
 								allProjects = res;
@@ -95,7 +95,7 @@ $('#body').fa({
 											var preImg = [];
 											$.each(val.attachments, (index, attach) => {
 												if (attach.filename.indexOf('png') >= 0 || attach.filename.indexOf('jpg') >= 0 || attach.filename.indexOf('jpeg') >= 0 ) {
-													preImg[index] = attach.links.thumbnail; 
+													preImg[index] = attach.links.thumbnail;
 												}
 											});
 											if (preImg.length) {
@@ -119,7 +119,7 @@ $('#body').fa({
 										 $('.loops-wrapper').prepend( '<article class="clone-article post type-post status-publish format-standard has-post-thumbnail hentry category-finearts post clearfix cat-3">'+html+'</article>' );
 									});
 								}
-								
+
 							}
 						});
 					}
@@ -148,9 +148,9 @@ $('#body').fa({
 					if (name && currentProject[name]) {
 
 						draw(currentProject[name]);
-						
+
 					}else{
-						if (name && localStorage.getItem(name) ) 
+						if (name && localStorage.getItem(name) )
 							draw( JSON.parse(localStorage.getItem(name)) );
 						else
 							$state.redirect = '/';
@@ -183,7 +183,7 @@ function explode( delimiter, string ) {
     if ( typeof delimiter == 'function'|| typeof delimiter == 'object'|| typeof string == 'function'|| typeof string == 'object' )
         return emptyArray;
 
-    if ( delimiter === true ) 
+    if ( delimiter === true )
         delimiter = '1';
 
     return string.toString().split ( delimiter.toString() );
