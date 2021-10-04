@@ -1,3 +1,7 @@
+# Defunct
+
+This site's server was lost in the massive October 21st, 2021 disk failure and it is unlikely it will be rebuilt.
+
 # Installation
 
 Requirements: composer, PHP, MySQL (minimum versions unknown)
